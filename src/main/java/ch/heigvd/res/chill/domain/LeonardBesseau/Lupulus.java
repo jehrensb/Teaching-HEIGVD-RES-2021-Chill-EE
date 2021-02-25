@@ -6,8 +6,8 @@ import java.math.BigDecimal;
 
 public class Lupulus implements IProduct {
 
-  public final static String NAME = "Guinness";
-  public final static BigDecimal PRICE = new BigDecimal(5.0);
+  public final static String NAME = "Lupulus";
+  public final static BigDecimal PRICE = new BigDecimal(4.2);
 
   @Override
   public String getName() {
