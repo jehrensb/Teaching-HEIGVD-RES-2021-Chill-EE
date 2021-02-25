@@ -8,7 +8,7 @@ import java.math.BigDecimal;
  * Comme j'ai arrêté l'alcool, j'vais plutôt parler en terme de chanvre.
  *
  * J'ai eu l'occasion de tomber sur une variété assez fortement
- * sympathique.
+ * sympathique. 
  */
 
 public class Skunk implements IProduct {
