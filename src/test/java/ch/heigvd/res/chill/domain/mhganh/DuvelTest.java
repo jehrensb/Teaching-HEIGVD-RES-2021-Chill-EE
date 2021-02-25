@@ -1,4 +1,4 @@
-package ch.heigvd.res.chill.domain.wasadigi;
+package ch.heigvd.res.chill.domain.mhganh;
 
 import ch.heigvd.res.chill.domain.Bartender;
 import ch.heigvd.res.chill.protocol.OrderRequest;
@@ -9,22 +9,22 @@ import java.math.BigDecimal;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-class LaFrancheTest {
+class DuvelTest {
 
   @Test
-  void thePriceAndNameForLaFrancheShouldBeCorrect() {
-    LaFranche beer = new LaFranche();
-    assertEquals(beer.getName(), LaFranche.NAME);
-    assertEquals(beer.getPrice(), LaFranche.PRICE);
+  void thePriceAndNameForPunkIPAShouldBeCorrect() {
+    Duvel beer = new Duvel();
+    assertEquals(beer.getName(), Duvel.NAME);
+    assertEquals(beer.getPrice(), Duvel.PRICE);
   }
 
   @Test
-  void aBartenderShouldAcceptAnOrderForLaFranche() {
+  void aBartenderShouldAcceptAnOrderForPunkIPA() {
     Bartender jane = new Bartender();
-    String productName = "ch.heigvd.res.chill.domain.wasadigi.LaFranche";
+    String productName = "ch.heigvd.res.chill.domain.mhganh.Duvel";
     OrderRequest request = new OrderRequest(3, productName);
     OrderResponse response = jane.order(request);
-    BigDecimal expectedTotalPrice = LaFranche.PRICE.multiply(new BigDecimal(3));
+    BigDecimal expectedTotalPrice = Duvel.PRICE.multiply(new BigDecimal(3));
     assertEquals(expectedTotalPrice, response.getTotalPrice());
   }
 
