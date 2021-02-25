@@ -11,7 +11,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class PinguTest {
 
     @Test
-    void thePriceAndNameForBoxerShouldBeCorrect() {
+    void thePriceAndNameForPinguShouldBeCorrect() {
         Pingu beer = new Pingu();
         assertEquals(beer.getName(),Pingu.NAME);
         assertEquals(beer.getPrice(),Pingu.PRICE);
