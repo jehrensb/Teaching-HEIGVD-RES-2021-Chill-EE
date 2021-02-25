@@ -19,7 +19,7 @@ public class LaFinDuMondeTest {
     }
 
     @Test
-    void aBartenderShouldAcceptAnOrderForBoxer() {
+    void aBartenderShouldAcceptAnOrderForLaFinDuMonde() {
         Bartender alice = new Bartender();
         String productName = "ch.heigvd.res.chill.domain.Nono98.LaFinDuMonde";
         OrderRequest request = new OrderRequest(6, productName);
