@@ -12,7 +12,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class MoonTest {
 
     @Test
-    void thePriceAndNameForBoxerShouldBeCorrect() {
+    void thePriceAndNameForMoonShouldBeCorrect() {
         Moon m = new Moon();
         assertEquals(m.getName(), Moon.NAME);
         assertEquals(m.getPrice(), Moon.PRICE);
