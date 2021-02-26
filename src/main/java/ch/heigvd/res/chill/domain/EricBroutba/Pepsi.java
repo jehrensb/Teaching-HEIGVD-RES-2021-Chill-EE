@@ -6,7 +6,7 @@ import java.math.BigDecimal;
 
 public class Pepsi implements IProduct {
 
-  public final static String NAME = "Boxer";
+  public final static String NAME = "Pepsi";
   public final static BigDecimal PRICE = new BigDecimal(1.2);
 
   @Override
