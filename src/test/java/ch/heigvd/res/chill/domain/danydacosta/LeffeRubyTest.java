@@ -13,14 +13,14 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 class LeffeRubyTest {
 
   @Test
-  void thePriceAndNameForBoxerShouldBeCorrect() {
+  void thePriceAndNameForLeffeRubyShouldBeCorrect() {
     LeffeRuby beer = new LeffeRuby();
     assertEquals(beer.getName(), LeffeRuby.NAME);
     assertEquals(beer.getPrice(), LeffeRuby.PRICE);
   }
 
   @Test
-  void aBartenderShouldAcceptAnOrderForBoxer() {
+  void aBartenderShouldAcceptAnOrderForLeffeRuby() {
     Bartender jane = new Bartender();
     String productName = "ch.heigvd.res.chill.domain.danydacosta.LeffeRuby";
     OrderRequest request = new OrderRequest(3, productName);
