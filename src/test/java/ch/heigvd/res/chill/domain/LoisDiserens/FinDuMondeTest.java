@@ -12,14 +12,14 @@ import static org.junit.jupiter.api.Assertions.*;
 class FinDuMondeTest {
 
     @Test
-    void PrixEtNomCorrectJoratBlanche() {
+    void PrixEtNomCorrectFinDuMonde() {
         FinDuMonde beer = new FinDuMonde();
         assertEquals(beer.getName(), FinDuMonde.NAME);
         assertEquals(beer.getPrice(), FinDuMonde.PRICE);
     }
 
     @Test
-    void AccepterCommandePourJoratBlanche() {
+    void AccepterCommandePourFinDuMonde() {
         int nbBieresCommandees = 3;
         Bartender jane = new Bartender();
         String productName = "ch.heigvd.res.chill.domain.LoisDiserens.FinDuMonde";
