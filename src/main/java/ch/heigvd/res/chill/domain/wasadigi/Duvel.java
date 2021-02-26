@@ -1,4 +1,4 @@
-package ch.heigvd.res.chill.domain.mhganh;
+package ch.heigvd.res.chill.domain.wasadigi;
 
 import ch.heigvd.res.chill.domain.IProduct;
 
