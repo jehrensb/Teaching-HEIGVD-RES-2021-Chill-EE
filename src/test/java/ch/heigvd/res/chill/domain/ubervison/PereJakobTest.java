@@ -19,7 +19,7 @@ class PereJakobTest {
     }
 
     @Test
-    void bartenderShouldAccpetPereJakobOrder() {
+    void bartenderShouldAcceptPereJakobOrder() {
         Bartender jakob = new Bartender();
         String productName = "ch.heigvd.res.chill.domain.ubervison.PereJakob";
         OrderRequest request = new OrderRequest(2, productName);
