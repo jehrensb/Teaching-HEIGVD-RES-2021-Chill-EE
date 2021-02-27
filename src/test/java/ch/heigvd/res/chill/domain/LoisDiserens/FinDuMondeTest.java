@@ -1,7 +1,6 @@
 package ch.heigvd.res.chill.domain.LoisDiserens;
 
 import ch.heigvd.res.chill.domain.Bartender;
-import ch.heigvd.res.chill.domain.wasadigi.PunkIPA;
 import ch.heigvd.res.chill.protocol.OrderRequest;
 import ch.heigvd.res.chill.protocol.OrderResponse;
 import org.junit.jupiter.api.Test;
@@ -10,23 +9,24 @@ import java.math.BigDecimal;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class JoratBlancheTest {
+class FinDuMondeTest {
 
     @Test
-    void PrixEtNomCorrectJoratBlanche() {
-        JoratBlanche beer = new JoratBlanche();
-        assertEquals(beer.getName(), JoratBlanche.NAME);
-        assertEquals(beer.getPrice(), JoratBlanche.PRICE);
+    void PrixEtNomCorrectFinDuMonde() {
+        FinDuMonde beer = new FinDuMonde();
+        assertEquals(beer.getName(), FinDuMonde.NAME);
+        assertEquals(beer.getPrice(), FinDuMonde.PRICE);
     }
 
     @Test
-    void AccepterCommandePourJoratBlanche() {
-        int nbBieresCommandees = 2;
+    void AccepterCommandePourFinDuMonde() {
+        int nbBieresCommandees = 3;
         Bartender jane = new Bartender();
-        String productName = "ch.heigvd.res.chill.domain.LoisDiserens.JoratBlanche";
+        String productName = "ch.heigvd.res.chill.domain.LoisDiserens.FinDuMonde";
         OrderRequest request = new OrderRequest(nbBieresCommandees, productName);
         OrderResponse response = jane.order(request);
-        BigDecimal expectedTotalPrice = JoratBlanche.PRICE.multiply(new BigDecimal(nbBieresCommandees));
+        BigDecimal expectedTotalPrice = FinDuMonde.PRICE.multiply(new BigDecimal(nbBieresCommandees));
         assertEquals(expectedTotalPrice, response.getTotalPrice());
     }
+
 }
