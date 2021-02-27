@@ -4,9 +4,9 @@ import ch.heigvd.res.chill.domain.IProduct;
 
 import java.math.BigDecimal;
 
-public class Grimbergen implements IProduct {
+public class BoucanierRedAle implements IProduct {
 
-    public final static String NAME = "Grimbergen";
+    public final static String NAME = "BoucanierRedAle";
     public final static BigDecimal PRICE = new BigDecimal(4.1);
 
     @Override
