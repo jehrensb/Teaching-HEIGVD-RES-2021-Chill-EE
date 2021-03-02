@@ -6,15 +6,18 @@ import ch.heigvd.res.chill.protocol.OrderRequest;
 import ch.heigvd.res.chill.protocol.OrderResponse;
 import org.junit.jupiter.api.Test;
 
+
 import java.math.BigDecimal;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class KwakTest {
 
   @Test
   void thePriceAndNameForKwakShouldBeCorrect() {
     Kwak beer = new Kwak();
-    assertEquals(beer.getName(), Guinness.NAME);
-    assertEquals(beer.getPrice(), Guinness.PRICE);
+    assertEquals(beer.getName(), Kwak.NAME);
+    assertEquals(beer.getPrice(), Kwak.PRICE);
   }
 
   @Test
